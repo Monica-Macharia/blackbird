@@ -106,13 +106,13 @@ class Animal{
         $this->name = $name;
     }
 
-    public function naming(){
+    public function __destruct(){
       echo "This is $this->type and it is known as $this->name "; 
     }
 }
 
 $obj = new Animal("cat", "cheetah");
-$obj-> naming();
+
 
 echo(strlen("Hello world"));
 echo(strrev("Hello World"))."\n";
