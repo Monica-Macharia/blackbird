@@ -63,3 +63,37 @@ $student->name = "Doe";
 $student->age = 40;
 $student->welcome();
 ?>
+
+<?php
+$location="Nanuki";
+
+
+function hike(){
+    global $location;
+    echo "Hello, am in $location";
+}
+hike();
+?>
+
+<?php
+$m = 500;
+$n = 400;
+function sum(){
+    global $m, $n;
+    echo $m + $n + $m + 4000;
+}
+sum();
+echo "<br>";
+
+function increment(){
+    static $count = 0;
+    $newCount = $count++;
+    echo $count;
+    
+    echo $newCount;
+}
+increment();
+increment();
+increment();
+
+?>
