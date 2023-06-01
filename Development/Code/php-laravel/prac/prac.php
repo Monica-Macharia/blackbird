@@ -90,11 +90,32 @@ function increment(){
     static $count = 0;
     $newCount = $count++;
     echo $count."\n";
-    
-    echo $newCount;
+    //new line
+    echo $newCount. '\n';
 }
 increment();
 increment();
 increment();
 
+class Animal{
+    public $type;
+    public $name;
+
+    public function __construct($type, $name){
+        $this->type = $type;
+        $this->name = $name;
+    }
+
+    public function naming(){
+      echo "This is $this->type and it is known as $this->name "; 
+    }
+}
+
+$obj = new Animal("cat", "cheetah");
+$obj-> naming();
+
+echo(strlen("Hello world"));
+echo(strrev("Hello World"))."\n";
+echo(str_replace("Hello word", "word", "Hello word earth"));
+echo(str_word_count("Helloworld"))
 ?>
