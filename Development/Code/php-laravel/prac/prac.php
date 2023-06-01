@@ -113,6 +113,25 @@ class Animal{
 
 $obj = new Animal("cat", "cheetah");
 
+class Car{
+    public static function brand(){
+        return "Heeeeeeeeeeeeeeeeeeeeeeeeee";
+    }
+    // public function greet(){
+    //     self::brand();
+    // }
+}
+class Volvo extends Car{
+    public $head;
+    public function __constructor(){
+        $this->head = parent::brand();
+    }
+    
+}
+$guta = new Volvo;
+echo $guta -> head;
+
+
 
 echo(strlen("Hello world"));
 echo(strrev("Hello World"))."\n";
