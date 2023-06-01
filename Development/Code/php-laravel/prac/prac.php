@@ -130,7 +130,23 @@ echo sqrt(144);
 echo round(3.30)."\n";
 echo rand(20, 25);
 $user = array('name' => 'John', 'age' => 30, 'email' => 'john@example.com');
-echo $user["name"];
+echo $user["name"]."\n";
+$num = [5,3,2,4,4,5,5,3,2,4,5,6,32,45,5];
+$nums = sort($num);
+print_r($nums);
+
+$x = 75;
+$y = 25; 
+
+function addition() {
+	global $x, $y;  
+    global $z;
+	return $z = $x + $y;
+  
+}
+
+addition();
+echo $z;
 
 
 ?>
