@@ -117,5 +117,20 @@ $obj-> naming();
 echo(strlen("Hello world"));
 echo(strrev("Hello World"))."\n";
 echo(str_replace("Hello word", "word", "Hello word earth"));
-echo(str_word_count("Helloworld"))
+echo(str_word_count("Helloworld"))."\n";
+
+echo(is_int(6))."\n";
+echo(is_float(4556)). "\n";
+
+
+echo intval("gh")."\n";
+echo max([67, 3,566,446])."\n";
+echo abs(-2.4);
+echo sqrt(144);
+echo round(3.30)."\n";
+echo rand(20, 25);
+$user = array('name' => 'John', 'age' => 30, 'email' => 'john@example.com');
+echo $user["name"];
+
+
 ?>
