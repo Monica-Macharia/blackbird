@@ -13,9 +13,10 @@ echo $name, $age;
 
 
 function greet($name, $age){
-    echo "Hey check $name out, she is $age years";
+    echo "Hey check $name out, she is $age years" ."\n";
 }
 greet("Jojo", 50);
+greet("Joo", 40);
 
 
 
@@ -88,7 +89,7 @@ echo "<br>";
 function increment(){
     static $count = 0;
     $newCount = $count++;
-    echo $count;
+    echo $count."\n";
     
     echo $newCount;
 }
